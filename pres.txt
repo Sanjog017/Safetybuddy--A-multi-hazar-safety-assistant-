@@ -1,0 +1,53 @@
+# Contents / Agenda
+
+## Introduction
+
+The Disaster Safety Assistant is a console-based C application designed to provide critical safety information during various natural disasters. This educational project aims to deliver immediate, accessible safety instructions to users during emergency situations, functioning completely offline without requiring internet connectivity.
+
+## Problem Statement
+
+During natural disasters, people often panic and don't know the correct safety procedures to follow. Misinformation or lack of information can lead to dangerous situations and loss of life. Traditional emergency resources may not be accessible during disasters due to infrastructure damage, network outages, or lack of information. There's a need for a reliable, portable tool that provides immediate, accurate safety instructions regardless of external conditions.
+
+## Motivation
+
+The motivation behind this project stems from the need to increase survival rates during natural disasters by providing instant access to life-saving information. Natural disasters affect millions of people worldwide, and having immediate access to safety protocols can make a crucial difference. Additionally, in areas with limited technological infrastructure, having a simple, locally-run application that doesn't rely on internet connectivity is invaluable for disaster preparedness.
+
+## Objectives
+
+• Provide immediate access to critical safety information during emergencies
+• Offer comprehensive guidelines for multiple types of natural disasters
+• Create a user-friendly interface that remains accessible under stress
+• Operate completely offline without requiring network connectivity
+• Include emergency contact management for quick access to vital numbers
+• Deliver first aid instructions for immediate response to injuries
+• Educate users on proper disaster response procedures
+• Ensure the application is lightweight and can run on basic hardware
+
+## Features
+
+• Interactive menu system with disaster-specific safety instructions
+• Support for 5 major disaster types: Earthquakes, Floods, Fires, Landslides, and Storms
+• Emergency contact management system (store up to 20 contacts)
+• Pre-loaded with 4 default emergency numbers (112, 118 for various services)
+• Comprehensive first aid instructions for common emergency situations
+• Color-coded interface for improved readability
+• Offline functionality with no internet requirement
+• Simple, intuitive navigation suitable for all age groups
+• Detailed safety protocols for each disaster scenario
+• Post-disaster safety advice and recovery information
+
+## Platform (Development Environment)
+
+• Language: C programming language
+• Development Environment: Linux-based system
+• Compiler: GCC (GNU Compiler Collection)
+• Runtime: Console/terminal application
+• Compatibility: Cross-platform (designed to work on both Windows and Unix-based systems)
+• Libraries: Standard C libraries (stdio.h, stdlib.h, string.h)
+• Memory Management: Static allocation with fixed-size arrays
+• Terminal Features: ANSI color codes for enhanced UI
+• Architecture: 64-bit compatible
+
+## Conclusion
+
+The Disaster Safety Assistant represents a valuable tool in emergency preparedness, offering accessible safety information during critical moments. The application successfully delivers on its primary objective of providing offline disaster safety information in a user-friendly format. While the current version has limitations such as in-memory contact storage, it establishes a solid foundation for further development. Future enhancements could include persistent data storage, multilingual support, and integration with GPS-based hazard warnings. This project demonstrates the potential of simple technology solutions in promoting community resilience and safety during natural disasters.
