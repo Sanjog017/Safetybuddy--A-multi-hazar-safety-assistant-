@@ -299,7 +299,7 @@ int aboutProgram() //function for about this program
 {
     int c;
     printf("About This Program\n");
-    printf("SafetyBuddy is a multi-hazard safety assistant designed to provide safety tips and emergency contact information for various hazards, including earthquakes, floods, fires, road accidents, landslides, and storms. It also offers first aid instructions and allows users to add their own emergency contacts for quick access during emergencies.\n");
+    printf("SafetyBuddy is a multi-hazard safety assistant designed to provide safety tips and emergency contact information for various hazards,  including earthquakes, floods, fires, road accidents, landslides, and storms. It also offers first aid instructions and allows users to add their own emergency contacts for quick access during emergencies.\n");
     printf("press 0 for main menu\n");
     scanf("%d", &c);
 
@@ -310,7 +310,7 @@ int aboutProgram() //function for about this program
             break;
 
         default:
-           while(c != 0) //error handling for invalid input in earthquake safety menu
+           while(c != 0) //error handling for invalid input in aboutprogram  menu
            {
                printf("Invalid choice. Please press 0 to return to the main menu.\n");
                scanf("%d", &c);
