@@ -153,12 +153,16 @@ Planned file handling:
 
 ## 10. Conclusion
 
-SafetyBuddy addresses a critical need for accessible emergency information during natural disasters. The current implementation provides a solid foundation with basic functionality for safety information display. However, significant improvements are needed in areas such as proper navigation, data persistence, input validation, and user experience.
+SafetyBuddy addresses a critical need for accessible emergency information during 
+natural disasters. The current implementation provides a solid foundation with basic 
+functionality for safety information display. However, significant improvements are needed 
+in areas such as proper navigation, data persistence, input validation, and user experience.
 
-The modular structure of the code allows for easy extension and enhancement according to the phased development plan. Future work will focus on implementing the critical Phase 1 features to make the application fully functional, followed by planned enhancements in Phase 2-4 to create a comprehensive safety assistant tool.
+The modular structure of the code allows for easy extension and enhancement according to
+ the phased development plan. Future work will focus on implementing the critical Phase 1 features 
+ to make the application fully functional, followed by planned enhancements in Phase 2-4 to create a 
+ comprehensive safety assistant tool.
 
-The project successfully demonstrates the potential of simple technology solutions in promoting community resilience and safety during natural disasters while maintaining accessibility for users with limited technological resources.
-
-
-
-
+The project successfully demonstrates the potential of simple technology solutions in 
+promoting community resilience and safety during natural disasters while maintaining accessibility
+ for users with limited technological resources.
