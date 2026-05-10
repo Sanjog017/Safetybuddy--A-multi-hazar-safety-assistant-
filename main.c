@@ -39,7 +39,8 @@ do{
 int Flood() //function for flood safety tips
 { 
     int c;
-    do {
+    do
+     {
     printf("Flood safety\n");
     printf("1. Move to higher ground\n");
     printf("2. Avoid walking or driving through flooded areas\n");
