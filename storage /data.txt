@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+struct safetyrecord{
+    char name[25];
+    char event[50];
+    char 
+};
+sturct 
