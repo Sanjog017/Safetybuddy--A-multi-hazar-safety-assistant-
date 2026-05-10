@@ -38,15 +38,15 @@ The motivation behind this project stems from the need to increase survival rate
 
 ## Platform (Development Environment)
 
-• Language: C programming language
-• Development Environment: Linux-based system
-• Compiler: GCC (GNU Compiler Collection)
-• Runtime: Console/terminal application
-• Compatibility: Cross-platform (designed to work on both Windows and Unix-based systems)
-• Libraries: Standard C libraries (stdio.h, stdlib.h, string.h)
-• Memory Management: Static allocation with fixed-size arrays
-• Terminal Features: ANSI color codes for enhanced UI
-• Architecture: 64-bit compatible
+Language: C programming language  
+Development Environment: Windows, macOS, and Linux-based systems  
+Compiler: GCC (GNU Compiler Collection)  
+Runtime: Console/terminal application  
+Compatibility: Cross-platform (designed to work on Windows, macOS, and Unix-based systems)  
+Libraries: Standard C libraries (stdio.h, stdlib.h, string.h)  
+Memory Management: Static allocation with fixed-size arrays  
+Terminal Features: ANSI color codes for enhanced UI  
+Architecture: 64-bit compatible  
 
 ## Conclusion
 
