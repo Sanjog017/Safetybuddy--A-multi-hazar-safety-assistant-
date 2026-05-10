@@ -7,6 +7,7 @@ SafetyBuddy is a multi-hazard safety assistant designed to provide comprehensive
 
 ## How to run?
 To run SafetyBuddy, follow these steps:
+
 1. Clone the repository:
 2. Install the required dependencies:
 3. Run the console application:
