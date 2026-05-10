@@ -36,12 +36,15 @@ The primary objective of SafetyBuddy is to create a reliable, user-friendly tool
   - Usage logging
   - Custom safety tips feature
   - Improve error handling
-
-- **Phase 3 (Enhancement):**
-  - Multi-language support
+  - Chat box                                            //predefined  
   - Quiz mode
   - Medical information storage
-  - Supply kit inventory
+  - Supply kit inventory 
+  - Multi-language support
+
+- **Phase 3 (Enhancement):**
+  - Safety allert                                       //future todo 
+  - Near safe location according to users info          //future todo ( once set from user if offline/ once update every months )
 
 - **Phase 4 (Advanced):**
   - Modular code structure
@@ -157,3 +160,7 @@ SafetyBuddy addresses a critical need for accessible emergency information durin
 The modular structure of the code allows for easy extension and enhancement according to the phased development plan. Future work will focus on implementing the critical Phase 1 features to make the application fully functional, followed by planned enhancements in Phase 2-4 to create a comprehensive safety assistant tool.
 
 The project successfully demonstrates the potential of simple technology solutions in promoting community resilience and safety during natural disasters while maintaining accessibility for users with limited technological resources.
+
+
+
+
