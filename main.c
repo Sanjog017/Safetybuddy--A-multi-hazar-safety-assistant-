@@ -1,10 +1,12 @@
 #include<stdio.h>
 
-int quiz(); //function prototype for quiz game
+int main(); //function prototype for main menu
+int addEmergencyContact(); //function prototype for adding emergency contact information
+int quizGame(); //function prototype for quiz game
 
-int main (); //function prototype for main menu
 
 
+//case 1
 int Earthquake() //function for earthquake safety tips
 {
     int c;
@@ -33,7 +35,7 @@ do{
 
 
 
-
+//case 2
 int Flood() //function for flood safety tips
 { 
     int c;
@@ -62,7 +64,7 @@ int Flood() //function for flood safety tips
 
 
 
-
+//case 3
 int fire() //function for fire safety tips
 {
     int c;
@@ -90,34 +92,7 @@ int fire() //function for fire safety tips
 
 
 
-
-int roadAccident() //function for road accident safety tips
-{
-    int c;
-    do{
-    printf("Road Accident safety\n");
-    printf("1. Always wear a seatbelt\n");
-    printf("2. Follow traffic rules and speed limits\n");
-    printf("3. Avoid distractions while driving\n");
-    printf("press 0 for main menu\n");
-    scanf("%d", &c);
- switch (c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-           printf("Invalid choice. Please press 0 to return to the main menu.\n");
-           
-    }
-    }while (c != 0); //loop to keep the program a run until choosing a proper choice by a user
-             return 0;
-}
-
-
-
-
+//case 4
 int landslide() //function for landslide safety tips
 {
     int c;
@@ -145,7 +120,7 @@ int landslide() //function for landslide safety tips
 
 
 
-
+//case 5
 int storm() //function for storm safety tips
 {
     int c;
@@ -173,18 +148,18 @@ int storm() //function for storm safety tips
 
 
 
-int emergencyContact() //function for emergency contact information
+//case 6
+int roadAccident() //function for road accident safety tips
 {
     int c;
-    do {
-    printf("Emergency Contacts\n");
-    printf("1. Local Emergency Services: 911\n");
-    printf("2. Poison Control: 1-800-222-1222\n");
-    printf("3. National Disaster Hotline: 1-800-123-4567\n");
+    do{
+    printf("Road Accident safety\n");
+    printf("1. Always wear a seatbelt\n");
+    printf("2. Follow traffic rules and speed limits\n");
+    printf("3. Avoid distractions while driving\n");
     printf("press 0 for main menu\n");
     scanf("%d", &c);
-
-     switch (c)
+ switch (c)
     {
         case 0:
             main();
@@ -201,6 +176,47 @@ int emergencyContact() //function for emergency contact information
 
 
 
+//case 7
+int emergencyContact() //function for emergency contact information
+{
+    int c;
+    do {
+    printf("Emergency Contacts\n");
+    printf("1. Local Emergency Services: 911\n");
+    printf("2. Poison Control: 1-800-222-1222\n");
+    printf("3. National Disaster Hotline: 1-800-123-4567\n");
+    printf("4. press 1 for adding custom contact\n");
+    printf("press 0 for main menu\n");
+    scanf("%d", &c);
+
+     switch (c)
+    {
+        case 0:
+            main();
+            break;
+
+        case 1:
+            addEmergencyContact();
+            break;
+
+
+        default:
+           printf("Invalid choice. Please press 0 to return to the main menu.\n");
+           
+    }
+    }while (c != 0 || c != 1); //loop to keep the program a run until choosing a proper choice by a user
+             return 0;
+}
+
+
+int addEmergencyContact() //function for adding emergency contact information
+{
+    return 0;
+}
+
+
+
+//case 8
 int firstAidInstructions() //function for first aid instructions
 {
     int c;
@@ -229,6 +245,24 @@ int firstAidInstructions() //function for first aid instructions
 
 
 
+//case 9
+int firstAidInventory() //function for first aid inventory (not implemented yet)
+{
+    return 0;
+}
+
+
+//case 10 = on quiz.c
+
+//case 11
+int chatBox() //function for chat box (not implemented yet)
+{
+    return 0;
+}
+
+
+
+//case 12
 int aboutProgram() //function for about this program
 {
     int c;
@@ -254,15 +288,7 @@ int aboutProgram() //function for about this program
 
 
 
-
-int addEmergencyContact() //function for adding emergency contact information
-{
-    return 0;
-}
-
-
-
-
+//case 13
 int exitProgram() //function for exiting the program
 {
     printf("Exiting the program. Stay safe!\n");
@@ -282,69 +308,67 @@ int main() //function for main menu
                    printf("3. Fire Safety\n");
                    printf("4. Landslide Safety\n");
                    printf("5. Storm/Tornado Safety\n");
-                   printf("6. Emergency Contacts\n");
-                   printf("7. Add Emergency Contact\n");
+                   printf("6. Road Accident Safety\n");
+                   printf("7. Emergency Contacts\n"); // also includes adding user defined emergency contacts and viewing pre-defined emergency contacts
                    printf("8. First Aid Instructions\n");
-                   printf("9. About This Program\n");
-                   printf("10. Play Disaster Quiz Game\n");
-                   printf("11. Exit\n");
+                   printf("9. First Aid Inventory\n");
+                   printf("10. Quiz Game\n");
+                   printf("11. Chat Box\n");
+                   printf("12. About This Program\n");
+                   printf("13. Exit\n");
 
     scanf("%d", &choice);
 
     switch(choice) //switch case for main menu options
     {
+    
         case 1:
             Earthquake();
             break;
-
         case 2:
             Flood();
             break;
-
         case 3:
             fire();
             break;
-
         case 4:
             landslide();
             break;
-
         case 5:
             storm();
             break;
-
         case 6:
+            roadAccident();
+            break;
+        case 7:
             emergencyContact();
             break;
-
-        case 7:
-            addEmergencyContact();
-            break;
-
         case 8:
             firstAidInstructions();
             break;
-
         case 9:
+            firstAidInventory(); 
+            printf("First Aid Inventory feature is under development.\n");
+            break;
+        case 10:
+           quizGame(); 
+            break;
+        case 11:
+            chatBox(); 
+           printf("Chat Box feature is under development.\n");
+            break;
+        case 12:
             aboutProgram();
             break;
-
-        case 10:
-             quiz();
-            break; 
-
-        case 11:
+        case 13:
             exitProgram();
             break;
-         
-           
-    
-
      default: 
-     printf("Invalid choice. Please select a number between 1 and 10.\n");
+     printf("Invalid choice. Please select a number between 1 and 13.\n");
+        break;
     }
     
-    }while (choice != 10); //loop to keep the program a run until choosing a proper choice by a user 
+    }while (choice != 13); //loop to keep the program a run until choosing a proper choice by a user 
   
     
     return 0;

@@ -1,9 +1,9 @@
+
 #include <stdio.h>
 
-int quiz()
+int quizGame() //function for quiz game
 {
     char answer;
-
 
     printf("🌍 === DISASTER QUIZ === 🌍\n\n");
 
@@ -450,7 +450,6 @@ else
     printf("❌ Wrong! Correct answer is A\n\n");
 
 printf("🎉 === QUIZ FINISHED === 🎉\n");
-
 
     return 0;
 }
