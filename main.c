@@ -16,7 +16,7 @@ do{
     printf("2. Stay away from windows and heavy furniture\n");
     printf("3. Drop, Cover, and Hold On\n\n\n");
     printf("press 0 for main menu\n");
-    scanf("%d", &c); //
+    scanf("%d", &c); 
 
     switch (c)
     {
