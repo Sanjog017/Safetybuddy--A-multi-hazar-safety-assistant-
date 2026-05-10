@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int main(); //function prototype for main menu
+int quiz(); //function prototype for quiz game
 
-
+int main (); //function prototype for main menu
 
 
 int Earthquake() //function for earthquake safety tips
@@ -286,7 +286,8 @@ int main() //function for main menu
                    printf("7. Add Emergency Contact\n");
                    printf("8. First Aid Instructions\n");
                    printf("9. About This Program\n");
-                   printf("10. Exit\n");
+                   printf("10. Play Disaster Quiz Game\n");
+                   printf("11. Exit\n");
 
     scanf("%d", &choice);
 
@@ -329,8 +330,15 @@ int main() //function for main menu
             break;
 
         case 10:
+             quiz();
+            break; 
+
+        case 11:
             exitProgram();
             break;
+         
+           
+    
 
      default: 
      printf("Invalid choice. Please select a number between 1 and 10.\n");
