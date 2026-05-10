@@ -37,19 +37,17 @@ The primary objective of SafetyBuddy is to create a reliable, user-friendly tool
   - Custom safety tips feature
   - Improve error handling
   - Chat box                                            //predefined  
-  - Quiz mode
-  - Medical information storage
-  - Supply kit inventory 
-  - Multi-language support
+  - Quiz mode                                           //predefined
+  - Medical information storage                         //from the user abt his medical storage info
+  - Supply kit inventory                                //from the user abt his surviving inventory 
+  - Multi-language support                               //Nepali & English
 
-- **Phase 3 (Enhancement):**
+- **Phase 3 (Advanced/Additional features):**
   - Safety allert                                       //future todo 
   - Near safe location according to users info          //future todo ( once set from user if offline/ once update every months )
 
-- **Phase 4 (Advanced):**
-  - Modular code structure
-  - Additional features from Part 3
-  - Advanced UI improvements
+
+
 
 ## 4. Modules
 
