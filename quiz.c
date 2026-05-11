@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 
+int main(); //function prototype for main menu
 int quizGame() //function for quiz game
 {
     char answer;

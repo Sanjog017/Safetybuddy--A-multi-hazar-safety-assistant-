@@ -1,8 +1,11 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(); //function prototype for main menu
+int emergencyContact(); //function prototype for emergency contact
 int addEmergencyContact(); //function prototype for adding emergency contact information
 int quizGame(); //function prototype for quiz game
+int inventory(); //function prototype for inventory 
 
 
 
@@ -14,7 +17,7 @@ do{
     printf("Earthquake safety\n");
     printf("1. Cover your head and neck\n");
     printf("2. Stay away from windows and heavy furniture\n");
-    printf("3. Drop, Cover, and Hold On\n\n\n");
+    printf("3. Drop, Cover, and Hold On\n\n");
     printf("press 0 for main menu\n");
     scanf("%d", &c); 
 
@@ -35,6 +38,8 @@ do{
 
 
 
+
+
 //case 2
 int Flood() //function for flood safety tips
 { 
@@ -44,7 +49,7 @@ int Flood() //function for flood safety tips
     printf("Flood safety\n");
     printf("1. Move to higher ground\n");
     printf("2. Avoid walking or driving through flooded areas\n");
-    printf("3. Stay informed about flood warnings\n");
+    printf("3. Stay informed about flood warnings\n\n");
     printf("press 0 for main menu\n");
     scanf("%d", &c);
 
@@ -177,43 +182,7 @@ int roadAccident() //function for road accident safety tips
 
 
 
-//case 7
-int emergencyContact() //function for emergency contact information
-{
-    int c;
-    do {
-    printf("Emergency Contacts\n");
-    printf("1. Local Emergency Services: 911\n");
-    printf("2. Poison Control: 1-800-222-1222\n");
-    printf("3. National Disaster Hotline: 1-800-123-4567\n");
-    printf("4. press 1 for adding custom contact\n");
-    printf("press 0 for main menu\n");
-    scanf("%d", &c);
-
-     switch (c)
-    {
-        case 0:
-            main();
-            break;
-
-        case 1:
-            addEmergencyContact();
-            break;
-
-
-        default:
-           printf("Invalid choice. Please press 0 to return to the main menu.\n");
-           
-    }
-    }while (c != 0 || c != 1); //loop to keep the program a run until choosing a proper choice by a user
-             return 0;
-}
-
-
-int addEmergencyContact() //function for adding emergency contact information
-{
-    return 0;
-}
+//case 7 = in emc.c file
 
 
 
@@ -246,11 +215,8 @@ int firstAidInstructions() //function for first aid instructions
 
 
 
-//case 9
-int firstAidInventory() //function for first aid inventory (not implemented yet)
-{
-    return 0;
-}
+//case 9 = in the file of inventory.c
+
 
 
 //case 10 = on quiz.c
@@ -303,7 +269,7 @@ int main() //function for main menu
 {
     int choice;
     do {
-                   printf("Select a hazard to learn safety tips:\n");
+                   printf("\n\nSelect a hazard to learn safety tips:\n\n");
                    printf("1. Earthquake Safety\n");
                    printf("2. Flood Safety\n");
                    printf("3. Fire Safety\n");
@@ -312,11 +278,12 @@ int main() //function for main menu
                    printf("6. Road Accident Safety\n");
                    printf("7. Emergency Contacts\n"); // also includes adding user defined emergency contacts and viewing pre-defined emergency contacts
                    printf("8. First Aid Instructions\n");
-                   printf("9. First Aid Inventory\n");
+                   printf("9. Inventory\n");
                    printf("10. Quiz Game\n");
                    printf("11. Chat Box\n");
                    printf("12. About This Program\n");
                    printf("13. Exit\n\n");
+                   printf("Enter your choice (1-13):\n\n ");
 
     scanf("%d", &choice);
 
@@ -348,8 +315,7 @@ int main() //function for main menu
             firstAidInstructions();
             break;
         case 9:
-            firstAidInventory(); 
-            printf("First Aid Inventory feature is under development.\n");
+            inventory(); 
             break;
         case 10:
            quizGame(); 
