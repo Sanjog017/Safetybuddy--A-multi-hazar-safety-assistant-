@@ -6,6 +6,16 @@ int emergencyContact(); //function prototype for emergency contact
 int addEmergencyContact(); //function prototype for adding emergency contact information
 int quizGame(); //function prototype for quiz game
 int inventory(); //function prototype for inventory 
+int Earthquake(); //function prototype for earthquake safety tips
+int Flood(); //function prototype for flood safety tips
+int fire(); //function prototype for fire safety tips
+int landslide(); //function prototype for landslide safety tips
+int storm(); //function prototype for storm safety tips
+int roadAccident(); //function prototype for road accident safety tips
+int firstAidInstructions(); //function prototype for first aid instructions
+int chatBox(); //function prototype for chat box (not implemented yet)
+int aboutProgram(); //function prototype for about this program
+int exitProgram(); //function prototype for exiting the program
 
 
 

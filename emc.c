@@ -2,6 +2,9 @@
 #include<stdlib.h>
 int main(); //function prototype for main menu
 int addEmergencyContact(); //function prototype for adding emergency contact information
+
+
+
 int emergencyContact() // function for emergency contact information
 {
     int c;
