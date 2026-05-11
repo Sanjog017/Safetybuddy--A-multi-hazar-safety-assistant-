@@ -2,8 +2,9 @@
 #include<stdlib.h>
 
 int main(); //function prototype for main menu
+
+/*function used in main.c*/
 int emergencyContact(); //function prototype for emergency contact
-int addEmergencyContact(); //function prototype for adding emergency contact information
 int quizGame(); //function prototype for quiz game
 int inventory(); //function prototype for inventory 
 int Earthquake(); //function prototype for earthquake safety tips
@@ -16,6 +17,14 @@ int firstAidInstructions(); //function prototype for first aid instructions
 int chatBox(); //function prototype for chat box (not implemented yet)
 int aboutProgram(); //function prototype for about this program
 int exitProgram(); //function prototype for exiting the program
+
+/*Function used in inventory.c*/
+int foodWaterInventory(); //function prototype for food and water inventory
+int toolsEquipmentInventory(); //function prototype for tools and equipment inventory
+int importantDocumentsInventory(); //function prototype for important documents inventory
+
+/*Function used in emc.c*/
+int addEmergencyContact(); //function prototype for adding emergency contact information
 
 
 

@@ -1,61 +1,87 @@
+#include <stdio.h>
 
-#include<stdio.h>
-
-struct inventory{
+struct inventory {
     char items[50];
-    
 };
 
+int firstaidInventory();
+int emergencyInventory();
+int foodWaterInventory();
+int toolsEquipmentInventory();
+int importantDocumentsInventory();
 
-int main(); //function prototype for main menu
 int inventory()
 {
-
     int c;
-    printf("==Welcome to the Inventory Management ==\n");
-    printf("choose the number according to inventory you want to check or add\n");
+
+    printf("== Welcome to Inventory Management ==\n");
+    printf("Choose inventory:\n");
     printf("1. First Aid Inventory\n");
     printf("2. Emergency Supplies Inventory\n");
-    printf("3. Personal Protective Equipment Inventory\n");
+    printf("3. PPE Inventory\n");
     printf("4. Food and Water Inventory\n");
     printf("5. Tools and Equipment Inventory\n");
-    printf("6. Where are your documents and important papers?\n\n");
-    printf("7. Back to main menu\n");
+    printf("6. Important Documents\n");
+    printf("7. Back to Main Menu\n");
+
     scanf("%d", &c);
+
     switch (c)
     {
         case 1:
-        
-        break;
+            firstaidInventory();
+            break;
+
         case 2:
-            
+            emergencyInventory();
             break;
+
         case 3:
-           
+            printf("PPE Inventory\n");
             break;
+
         case 4:
-      
+            printf("Food and Water Inventory\n");
             break;
+
         case 5:
-            
+            printf("Tools and Equipment Inventory\n");
             break;
+
         case 6:
-           
+            printf("Important Documents\n");
             break;
+
         case 7:
-            main();
-            break;
+            return 0;   // go back safely
 
         default:
-           printf("Invalid choice. Please select a number between 1 and 7.\n");
-           
+            printf("Invalid choice.\n");
     }
+
+    return 0;
 }
-
-
 
 int firstaidInventory()
 {
+    struct inventory item;
+
+    printf("Enter first aid item: ");
+    scanf("%s", item.items);
+
+    printf("Stored: %s\n", item.items);
+
+    return 0;
+}
+
+int emergencyInventory()
+{
+    struct inventory item;
+
+    printf("Enter emergency item: ");
+    scanf("%s", item.items);
+
+    printf("Stored: %s\n", item.items);
 
     return 0;
 }
