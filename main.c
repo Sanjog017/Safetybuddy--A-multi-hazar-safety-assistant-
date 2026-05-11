@@ -316,7 +316,7 @@ int main() //function for main menu
                    printf("10. Quiz Game\n");
                    printf("11. Chat Box\n");
                    printf("12. About This Program\n");
-                   printf("13. Exit\n");
+                   printf("13. Exit\n\n");
 
     scanf("%d", &choice);
 
