@@ -5,6 +5,8 @@
 SafetyBuddy is a multi-hazard safety assistant designed to provide comprehensive safety information and guidance for various hazards. It aims to help users stay informed and prepared for potential dangers in their environment.
 
 ## Features
+1.inventory
+2.emergencycontact
 
 ## How to run?
 To run SafetyBuddy, follow these steps:
