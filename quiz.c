@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int main(); //function prototype for main menu
@@ -455,4 +454,3 @@ printf("🎉 === QUIZ FINISHED === 🎉\n");
     return 0;
 }
 
- 
