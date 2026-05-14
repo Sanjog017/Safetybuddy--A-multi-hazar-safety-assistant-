@@ -26,11 +26,19 @@ int importantDocumentsInventory(); //function prototype for important documents 
 /*Function used in emc.c*/
 int addEmergencyContact(); //function prototype for adding emergency contact information
 
+//function to clear screen after every choices given by a user 
+int clearscreen()
+{
+    system("clear");
+    return 0; 
+}
+
 
 
 //case 1
 int Earthquake() //function for earthquake safety tips
 {
+    clearscreen();
     int c;
 do{
     printf("\nEarthquake safety\n\n");
@@ -62,6 +70,7 @@ do{
 //case 2
 int Flood() //function for flood safety tips
 { 
+    clearscreen();
     int c;
     do
      {
@@ -92,6 +101,7 @@ int Flood() //function for flood safety tips
 //case 3
 int fire() //function for fire safety tips
 {
+    clearscreen();
     int c;
     do {
     printf("\nFire safety\n\n");
@@ -120,6 +130,7 @@ int fire() //function for fire safety tips
 //case 4
 int landslide() //function for landslide safety tips
 {
+        clearscreen();
     int c;
     do {
     printf("\nLandslide safety\n\n");
@@ -148,6 +159,7 @@ int landslide() //function for landslide safety tips
 //case 5
 int storm() //function for storm safety tips
 {
+        clearscreen();
     int c;
     do {
     printf("\nStorm safety\n\n");
@@ -176,6 +188,7 @@ int storm() //function for storm safety tips
 //case 6
 int roadAccident() //function for road accident safety tips
 {
+        clearscreen();
     int c;
     do{
     printf("\nRoad Accident safety\n\n");
@@ -208,6 +221,7 @@ int roadAccident() //function for road accident safety tips
 //case 8
 int firstAidInstructions() //function for first aid instructions
 {
+            clearscreen();
     int c;
     do {
     printf("\nFirst Aid Instructions\n\n");
@@ -243,6 +257,7 @@ int firstAidInstructions() //function for first aid instructions
 //case 11
 int chatBox() //function for chat box (not implemented yet)
 {
+        clearscreen();
     return 0;
 }
 
@@ -251,6 +266,7 @@ int chatBox() //function for chat box (not implemented yet)
 //case 12
 int aboutProgram() //function for about this program
 {
+    clearscreen();
     int c;
     do {
     printf("\nAbout This Program\n\n");
@@ -277,6 +293,7 @@ int aboutProgram() //function for about this program
 //case 13
 int exitProgram() //function for exiting the program
 {
+    clearscreen();  
     printf("Exiting the program. Stay safe!\n");
     return 0;
 }
@@ -286,6 +303,7 @@ int exitProgram() //function for exiting the program
 
 int main() //function for main menu
 {
+    clearscreen();
     int choice;
     do {
         printf("\n");

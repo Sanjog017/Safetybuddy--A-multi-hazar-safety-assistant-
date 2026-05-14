@@ -2,11 +2,12 @@
 #include<stdlib.h>
 int main(); //function prototype for main menu
 int addEmergencyContact(); //function prototype for adding emergency contact information
-
+int clearscreen(); //function prototype for clearing the screen
 
 
 int emergencyContact() // function for emergency contact information
 {
+    clearscreen();
     int c;
     char name[50];
     char number[20];

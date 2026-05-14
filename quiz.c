@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int main(); //function prototype for main menu
+int clearscreen(); //function prototype for clearing the screen
 int quizGame() //function for quiz game
+
 {
+    clearscreen();
     char answer;
 
     printf("🌍 === DISASTER QUIZ === 🌍\n\n");

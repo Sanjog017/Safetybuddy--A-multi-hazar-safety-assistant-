@@ -4,14 +4,18 @@ struct inventory {
     char items[50];
 };
 
+int clearscreen(); //function prototype for clearing the screen 
+
 int firstaidInventory();
 int emergencyInventory();
 int foodWaterInventory();
 int toolsEquipmentInventory();
 int importantDocumentsInventory();
 
+
 int inventory()
 {
+    clearscreen();  
     int c;
 
     printf("== Welcome to Inventory Management ==\n");
