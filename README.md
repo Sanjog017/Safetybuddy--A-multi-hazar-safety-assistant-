@@ -6,6 +6,6 @@ SafetyBuddy is a multi-hazard safety assistant designed to provide comprehensive
 
 
 I WILL BE UPDATING THE README FILE AFTER THE PROJECT IS OVER AND COMPLETELY DONE..
-will include everuthing about this project 
+will include everything about this project 
 
 stay tuned....
