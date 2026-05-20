@@ -3,38 +3,16 @@
 int main(); //function prototype for main menu
 int addEmergencyContact(); //function prototype for adding emergency contact information
 int clearscreen(); //function prototype for clearing the screen
+int readSection(char section[]); //function prototype for reading specific section from file
 
 
 int emergencyContact() // function for emergency contact information
 {
     clearscreen();
     int c;
-    char name[50];
-    char number[20];
-
-    FILE *fp;
-
-    do {
-        printf("\n===== Emergency Contacts =====\n");
-        printf("1. Fire Department: 101\n");
-        printf("2. Police: 100\n");
-        printf("3. Ambulance: 102\n");
-        printf("4. Disaster Management Authority: 108\n");
-
-        // Reading custom contacts from file
-        fp = fopen("contacts.txt", "r");
-
-        if (fp != NULL)
-        {
-            printf("\n--- Custom Contacts ---\n");
-
-            while (fscanf(fp, "%s %s", name, number) != EOF)
-            {
-                printf("%s : %s\n", name, number);
-            }
-
-            fclose(fp);
-        }
+    readSection("EMERGENCYCONTACT");
+    do
+    {
 
         printf("\nPress 1 to add custom contact\n");
         printf("Press 0 for main menu\n");

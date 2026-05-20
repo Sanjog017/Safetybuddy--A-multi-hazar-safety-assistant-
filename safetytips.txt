@@ -1,0 +1,134 @@
+THIS IS THE FILE FOR ADDING ANY EXTRA TIPS IN FUTURE (ALTERNATIVE APPROACH TO HARDCODE)
+
+[EARTHQUAKE]
+==================================================
+              EARTHQUAKE SAFETY
+==================================================
+
+1. Cover your head and neck
+2. Stay away from windows and heavy furniture
+3. Drop, Cover, and Hold On
+4. Keep emergency supplies ready
+5. Stay calm and avoid panic
+
+[EARTHQUAKE_END]
+
+
+[FLOOD]
+==================================================
+                 FLOOD SAFETY
+==================================================
+
+1. Move to higher ground immediately
+2. Avoid walking or driving through flooded areas
+3. Stay updated with flood warnings
+4. Disconnect electrical appliances if safe to do so
+5. Keep emergency supplies ready
+
+[FLOOD_END]
+
+
+[FIRE]
+==================================================
+                  FIRE SAFETY
+==================================================
+
+1. Install smoke alarms and test them regularly
+2. Practice fire escape plans
+3. Keep flammable materials away from heat sources
+4. Never leave cooking unattended
+5. Keep a fire extinguisher nearby
+
+[FIRE_END]
+
+
+[LANDSLIDE]
+==================================================
+               LANDSLIDE SAFETY
+==================================================
+
+1. Stay away from steep slopes and unstable ground
+
+2. Watch for cracks in the ground or leaning trees
+3. Move to safer areas immediately
+4. Listen to local authority warnings
+5. Keep emergency essentials ready
+
+[LANDSLIDE_END]
+
+
+[STORM]
+==================================================
+                 STORM SAFETY
+==================================================
+
+1. Stay indoors and away from windows
+2. Avoid using electrical appliances
+3. Keep flashlights and batteries ready
+4. Do not take shelter under trees
+5. Follow weather updates regularly
+
+[STORM_END]
+
+
+[ROADACCIDENT]
+==================================================
+            ROAD ACCIDENT SAFETY
+==================================================
+
+1. Always wear a seatbelt
+2. Follow traffic rules and speed limits
+3. Avoid distractions while driving
+4. Do not drink and drive
+5. Keep a first aid kit in your vehicle
+
+[ROAD_END]
+
+
+[FIRSTAID]
+==================================================
+             FIRST AID INSTRUCTIONS
+==================================================
+
+1. Clean cuts and scrapes properly
+2. Cool burns using cool water
+3. Apply clean bandages on wounds
+4. Perform Heimlich maneuver during choking
+5. Call emergency services if needed
+
+[FIRSTAID_END]
+
+
+[EMERGENCYCONTACT]
+==================================================
+             EMERGENCY CONTACTS
+==================================================
+
+1. Police: 100 (Nepal)
+2. Fire Brigade: 101
+3. Ambulance: 102
+4. Traffic Police: 103
+5. Disaster Emergency: 1149
+
+6. Keep local emergency numbers saved in your phone
+7. Share your live location with family during emergencies
+8. Know the nearest hospital and police station in your area
+
+[EMERGENCYCONTACT_END]
+
+
+[ABOUT]
+==================================================
+               ABOUT THIS PROGRAM
+==================================================
+
+SafetyBuddy is a multi-hazard safety
+assistant program designed to provide
+important safety instructions during
+emergencies.
+
+The program is designed for educational
+and emergency awareness purposes.
+
+
+[ABOUT_END]

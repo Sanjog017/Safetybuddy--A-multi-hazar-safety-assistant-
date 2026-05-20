@@ -456,4 +456,3 @@ printf("🎉 === QUIZ FINISHED === 🎉\n");
 
     return 0;
 }
-
