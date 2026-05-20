@@ -3,7 +3,6 @@
 ## Introduction
 
 SafetyBuddy is a multi-hazard safety assistant designed to provide comprehensive safety information and guidance for various hazards. It aims to help users stay informed and prepared for potential dangers in their environment.
-
 ## Features
 1.inventory
 2.emergencycontact
@@ -27,3 +26,9 @@ SafetyBuddy is designed to run on various platforms, including Windows, macOS, a
 
 ## Requirements : 
 This file lists the dependencies and requirements needed to run SafetyBuddy, such as specific libraries or hardware components.
+
+## changes todo 
+rewrite code using dynamic memory allocation 
+hard coded replacement ss
+remove inventory system 
+

@@ -258,6 +258,7 @@ int firstAidInstructions() //function for first aid instructions
 int chatBox() //function for chat box (not implemented yet)
 {
         clearscreen();
+        printf("\nChat box is under development. Stay tuned for updates!\n");
     return 0;
 }
 
@@ -292,10 +293,9 @@ int aboutProgram() //function for about this program
 
 //case 13
 int exitProgram() //function for exiting the program
-{
-    clearscreen();  
-    printf("Exiting the program. Stay safe!\n");
-    return 0;
+{  
+    clearscreen();
+   exit(0);
 }
 
 
@@ -362,8 +362,7 @@ int main() //function for main menu
             break;
         case 11:
             chatBox(); 
-           printf("Chat Box feature is under development.\n");
-            break;
+             break;
         case 12:
             aboutProgram();
             break;
