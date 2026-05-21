@@ -40,24 +40,11 @@ int clearscreen()
 int Earthquake() //function for earthquake safety tips
 {
     clearscreen();
-    int c;
     readSection("EARTHQUAKE");
 
- do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
-
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
- }while(c != 0);
-
+ printf("\n\n Press Enter to return to main menu\n");
+getchar(); // consume the newline character left by previous input
+getchar(); // wait for user to press Enter
     return 0;
 }
 
@@ -69,27 +56,13 @@ int Earthquake() //function for earthquake safety tips
 int Flood() //function for flood safety tips
 {
     clearscreen();
-    int c;
     readSection("FLOOD");
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
 
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
-
+    printf("\n\n Press Enter to return to main menu\n");
+  getchar(); // consume the newline character left by previous input
+  getchar(); // wait for user to press Enter
     return 0;
 }
-
 
 
 
@@ -98,23 +71,11 @@ do{
 int fire() //function for fire safety tips
 {
     clearscreen();
-    int c;
     readSection("FIRE");
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
 
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
+    printf("\n\n Press Enter to return to main menu\n");
+    getchar(); 
+    getchar(); 
 
     return 0;
 }
@@ -127,23 +88,11 @@ do{
 int landslide() //function for landslide safety tips
 {
     clearscreen();
-     int c;
     readSection("LANDSLIDE");
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
 
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
+    printf("\n\n Press Enter to return to main menu\n");
+    getchar();
+    getchar();
 
     return 0;
 }
@@ -156,28 +105,14 @@ do{
 int storm() //function for storm safety tips
 {
    clearscreen();
-    int c;
     readSection("STORM");
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
 
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
+    printf("\n\n Press Enter to return to main menu\n");
+    getchar();
+     getchar(); 
 
     return 0;
 }
-
-
 
 
 
@@ -185,24 +120,11 @@ do{
 int roadAccident() //function for road accident safety tips
 {
     clearscreen();
-    int c;
     readSection("ROADACCIDENT");
 
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
-
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
+    printf("\n\n Press Enter to return to main menu\n");
+    getchar(); 
+    getchar(); 
 
     return 0;
 }
@@ -219,25 +141,11 @@ do{
 int firstAidInstructions() //function for first aid instructions
 {
      clearscreen();
-    int c;
     readSection("FIRSTAID");
 
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
-
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
-
+    printf("\n\n Press Enter to return to main menu\n");
+  getchar();
+  getchar();
     return 0;
 }
 
@@ -250,24 +158,11 @@ do{
 int aboutProgram() //function for about this program
 {
  clearscreen();
-int c;
 readSection("ABOUT");            
-do{
-    printf("\n\npress 0 for main menu\n");
-    scanf("%d", &c);
-
-    switch(c)
-    {
-        case 0:
-            main();
-            break;
-
-        default:
-            printf("Invalid choice. Please press 0 to return to the main menu.\n");
-    }
-
-}while(c != 0);
-
+ 
+    printf("\n\n Press Enter to return to main menu\n");
+    getchar();
+    getchar();
     return 0;
 }
 
@@ -330,11 +225,10 @@ int readSection(char section[])
 
 int main() //function for main menu
 {
-    clearscreen();
-
     int choice;
 
     do {
+            clearscreen();
 
         printf("\n");
         printf("================================\n");
@@ -353,7 +247,7 @@ int main() //function for main menu
         printf("10. About This Program\n");
         printf("11. Exit\n\n");
 
-        printf("Enter your choice (1-11):\n\n ");
+        printf("Enter your choice (1-11): ");
 
         scanf("%d", &choice);
 

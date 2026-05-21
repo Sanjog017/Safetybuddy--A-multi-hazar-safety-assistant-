@@ -6,33 +6,26 @@ int clearscreen(); //function prototype for clearing the screen
 int readSection(char section[]); //function prototype for reading specific section from file
 
 
-int emergencyContact() // function for emergency contact information
+int emergencyContact()
 {
     clearscreen();
-    int c;
     readSection("EMERGENCYCONTACT");
-    do
+
+    int c;
+    printf("Enter 1 to add a new emergency contact\n ");
+    printf("Enter any other number to return to main menu\n ");
+    printf("Your choice: ");
+    scanf("%d", &c);
+
+    if(c == 1)
     {
-
-        printf("\nPress 1 to add custom contact\n");
-        printf("Press 0 for main menu\n");
-        scanf("%d", &c);
-
-        switch (c)
-        {
-            case 0:
-                main();
-                break;
-
-            case 1:
-                addEmergencyContact();
-                break;
-
-            default:
-                printf("Invalid choice.\n");
-        }
-
-    } while (c != 0);
+        addEmergencyContact();
+    }
+else if (c != 1)
+    {
+        printf("Returning to main menu...\n");
+        return 0;
+    }
 
     return 0;
 }
