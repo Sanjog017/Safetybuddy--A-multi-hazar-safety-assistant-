@@ -30,9 +30,6 @@ int quizGame() //quiz function
         return 0;
     }
 
-
-
-    
     //loop until end of file
     while(fgets(question, sizeof(question), fp) != NULL)
     {
