@@ -1,0 +1,359 @@
+[Achham]
+No current alerts
+Stay safe
+[/Achham]
+
+[Arghakhanchi]
+No current alerts
+Stay safe
+[/Arghakhanchi]
+
+[Baitadi]
+No current alerts
+Stay safe
+[/Baitadi]
+
+[Bajhang]
+No current alerts
+Stay safe
+[/Bajhang]
+
+[Bajura]
+No current alerts
+Stay safe
+[/Bajura]
+
+[Banke]
+No current alerts
+Stay safe
+[/Banke]
+
+[Bara]
+No current alerts
+Stay safe
+[/Bara]
+
+[Bhaktapur]
+No current alerts
+Stay safe
+[/Bhaktapur]
+
+[Bhojpur]
+No current alerts
+Stay safe
+[/Bhojpur]
+
+[Chitwan]
+No current alerts
+Stay safe
+[/Chitwan]
+
+[Dadeldhura]
+No current alerts
+Stay safe
+[/Dadeldhura]
+
+[Dailekh]
+No current alerts
+Stay safe
+[/Dailekh]
+
+[Dang]
+No current alerts
+Stay safe
+[/Dang]
+
+[Dhading]
+No current alerts
+Stay safe
+[/Dhading]
+
+[Dhankuta]
+No current alerts
+Stay safe
+[/Dhankuta]
+
+[Dhanusha]
+No current alerts
+Stay safe
+[/Dhanusha]
+
+[Dholkha]
+No current alerts
+Stay safe
+[/Dholkha]
+
+[Dolpa]
+No current alerts
+Stay safe
+[/Dolpa]
+
+[Doti]
+No current alerts
+Stay safe
+[/Doti]
+
+[East Nawalparasi]
+No current alerts
+Stay safe
+[/East Nawalparasi]
+
+[Gorkha]
+No current alerts
+Stay safe
+[/Gorkha]
+
+[Gulmi]
+No current alerts
+Stay safe
+[/Gulmi]
+
+[Humla]
+No current alerts
+Stay safe
+[/Humla]
+
+[Ilam]
+No current alerts
+Stay safe
+[/Ilam]
+
+[Jajarkot]
+No current alerts
+Stay safe
+[/Jajarkot]
+
+[Jhapa]
+No current alerts
+Stay safe
+[/Jhapa]
+
+[Jumpur (Jumla)]
+No current alerts
+Stay safe
+[/Jumpur (Jumla)]
+
+[Kailali]
+No current alerts
+Stay safe
+[/Kailali]
+
+[Kalikot]
+No current alerts
+Stay safe
+[/Kalikot]
+
+[Kanchanpur]
+No current alerts
+Stay safe
+[/Kanchanpur]
+
+[Kapilvastu]
+No current alerts
+Stay safe
+[/Kapilvastu]
+
+[Kaski]
+No current alerts
+Stay safe
+[/Kaski]
+
+[Kathmandu]
+No current alerts
+Stay safe
+[/Kathmandu]
+
+[Kavrepalanchok]
+No current alerts
+Stay safe
+[/Kavrepalanchok]
+
+[Khotang]
+No current alerts
+Stay safe
+[/Khotang]
+
+[Lamjung]
+No current alerts
+Stay safe
+[/Lamjung]
+
+[Mahottari]
+No current alerts
+Stay safe
+[/Mahottari]
+
+[Makwanpur]
+No current alerts
+Stay safe
+[/Makwanpur]
+
+[Manang]
+No current alerts
+Stay safe
+[/Manang]
+
+[Morang]
+No current alerts
+Stay safe
+[/Morang]
+
+[Mugu]
+No current alerts
+Stay safe
+[/Mugu]
+
+[Mustang]
+No current alerts
+Stay safe
+[/Mustang]
+
+[Myagdi]
+No current alerts
+Stay safe
+[/Myagdi]
+
+[Nawalpur]
+No current alerts
+Stay safe
+[/Nawalpur]
+
+[Nuwakot]
+No current alerts
+Stay safe
+[/Nuwakot]
+
+[Okhaldhunga]
+No current alerts
+Stay safe
+[/Okhaldhunga]
+
+[Palpa]
+No current alerts
+Stay safe
+[/Palpa]
+
+[Panchthar]
+No current alerts
+Stay safe
+[/Panchthar]
+
+[Parbat]
+No current alerts
+Stay safe
+[/Parbat]
+
+[Parsa]
+No current alerts
+Stay safe
+[/Parsa]
+
+[Ramechhap]
+No current alerts
+Stay safe
+[/Ramechhap]
+
+[Rasuwa]
+No current alerts
+Stay safe
+[/Rasuwa]
+
+[Rautahat]
+No current alerts
+Stay safe
+[/Rautahat]
+
+[Rolpa]
+No current alerts
+Stay safe
+[/Rolpa]
+
+[Rukum East]
+No current alerts
+Stay safe
+[/Rukum East]
+
+[Rukum West]
+No current alerts
+Stay safe
+[/Rukum West]
+
+[Rolpa]
+No current alerts
+Stay safe
+[/Rolpa]
+
+[Salyan]
+No current alerts
+Stay safe
+[/Salyan]
+
+[Sankhuwasabha]
+No current alerts
+Stay safe
+[/Sankhuwasabha]
+
+[Saptari]
+No current alerts
+Stay safe
+[/Saptari]
+
+[Sarlahi]
+No current alerts
+Stay safe
+[/Sarlahi]
+
+[Sindhuli]
+No current alerts
+Stay safe
+[/Sindhuli]
+
+[Sindhupalchok]
+No current alerts
+Stay safe
+[/Sindhupalchok]
+
+[Siraha]
+No current alerts
+Stay safe
+[/Siraha]
+
+[Solukhumbu]
+No current alerts
+Stay safe
+[/Solukhumbu]
+
+[Sunsari]
+No current alerts
+Stay safe
+[/Sunsari]
+
+[Surkhet]
+No current alerts
+Stay safe
+[/Surkhet]
+
+[Syangja]
+No current alerts
+Stay safe
+[/Syangja]
+
+[Tanahun]
+No current alerts
+Stay safe
+[/Tanahun]
+
+[Taplejung]
+No current alerts
+Stay safe
+[/Taplejung]
+
+[Terhathum]
+No current alerts
+Stay safe
+[/Terhathum]
+
+[Udayapur]
+No current alerts
+Stay safe
+[/Udayapur]

@@ -25,7 +25,11 @@ int addEmergencyContact(); //function prototype for adding emergency contact inf
 /*function to read specific section from file*/
 int readSection(char section[]);
 
+/*function used in alert.c*/
+int alerts();
 
+/*function for alert messages */
+int readAlert(char location[]);
 
 //function to clear screen after every choices given by a user
 int clearscreen()
@@ -34,7 +38,7 @@ int clearscreen()
     return 0;
 }
 
-
+//case 0 = alerts.c file
 
 //case 1
 int Earthquake() //function for earthquake safety tips
@@ -50,8 +54,6 @@ getchar(); // wait for user to press Enter
 
 
 
-
-
 //case 2
 int Flood() //function for flood safety tips
 {
@@ -63,7 +65,6 @@ int Flood() //function for flood safety tips
   getchar(); // wait for user to press Enter
     return 0;
 }
-
 
 
 
@@ -233,8 +234,8 @@ int main() //function for main menu
         printf("\n");
         printf("================================\n");
         printf("\tSafety Buddy \n");
-        printf("================================\n");
-
+        printf("================================\n\n");
+        printf("0. Alerts\n");
         printf("1. Earthquake Safety\n");
         printf("2. Flood Safety\n");
         printf("3. Fire Safety\n");
@@ -247,12 +248,16 @@ int main() //function for main menu
         printf("10. About This Program\n");
         printf("11. Exit\n\n");
 
-        printf("Enter your choice (1-11): ");
+        printf("Enter your choice (0-11): ");
 
         scanf("%d", &choice);
 
         switch(choice)
         {
+
+            case 0:
+                alerts();
+                break;
 
             case 1:
                 Earthquake();
@@ -299,7 +304,7 @@ int main() //function for main menu
                 break;
 
             default:
-                printf("Invalid choice. Please select a number between 1 and 11.\n");
+                printf("Invalid choice. Please select a number between 0 and 11.\n");
                 break;
         }
 
