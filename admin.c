@@ -21,6 +21,11 @@ int listLocations(); //function prototype for listing all locations
 int editAlert(); //function prototype for editing location alert
 int deleteAlertLines(); //function prototype for deleting alert lines
 int adminSettings(); //function prototype for admin settings
+int manageQuizAdmin(); //function prototype for admin quiz management
+int listQuizQuestions(); //function prototype for listing quiz questions
+int editQuizQuestion(); //function prototype for editing a quiz question
+int addQuizQuestion(); //function prototype for adding a quiz question
+int deleteQuizQuestion(); //function prototype for deleting a quiz question
 
 #define MAX_LINE 500
 #define TEMP_FILE "temp.txt"
@@ -92,9 +97,10 @@ int adminMenu() //function for admin menu
         printf("1. Manage Safety Tips\n");
         printf("2. Manage Emergency Contacts\n");
         printf("3. Manage Alerts\n");
-        printf("4. Settings\n");
-        printf("5. Return to Main Menu\n\n");
-        printf("Enter choice (1-5): ");
+        printf("4. Manage Quiz\n");
+        printf("5. Settings\n");
+        printf("6. Return to Main Menu\n\n");
+        printf("Enter choice (1-6): ");
         scanf("%d", &choice);
         getchar();
 
@@ -110,12 +116,15 @@ int adminMenu() //function for admin menu
                 manageAlertsAdmin();
                 break;
             case 4:
-                if(adminSettings() == 1)
-                {
-                    choice = 5;
-                }
+                manageQuizAdmin();
                 break;
             case 5:
+                if(adminSettings() == 1)
+                {
+                    choice = 6;
+                }
+                break;
+            case 6:
                 printf("\nReturning to main menu...\n");
                 break;
             default:
@@ -123,7 +132,7 @@ int adminMenu() //function for admin menu
                 printf("Press Enter...");
                 getchar();
         }
-    } while(choice != 5);
+    } while(choice != 6);
 
     return 0;
 }
@@ -1129,6 +1138,401 @@ int deleteAlertLines() //function for deleting specific lines from a location al
         printf("\nLocation '%s' not found!\n", locName);
     }
 
+    printf("Press Enter...");
+    getchar();
+    return 0;
+}
+
+int deleteQuizQuestion() //function for deleting a quiz question
+{
+    FILE *fp, *temp;
+    char question[200], optionA[100], optionB[100], optionC[100], optionD[100];
+    char correct;
+    int total = 0, choice, current = 0;
+
+    clearscreen();
+    printf("===== DELETE QUIZ QUESTION =====\n\n");
+
+    fp = fopen("quiz.txt", "r");
+    if(fp == NULL)
+    {
+        printf("Quiz file not found!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    while(fgets(question, sizeof(question), fp) != NULL)
+    {
+        if(fgets(optionA, sizeof(optionA), fp) == NULL) break;
+        if(fgets(optionB, sizeof(optionB), fp) == NULL) break;
+        if(fgets(optionC, sizeof(optionC), fp) == NULL) break;
+        if(fgets(optionD, sizeof(optionD), fp) == NULL) break;
+        if(fscanf(fp, " %c", &correct) != 1) break;
+        fgetc(fp);
+        fgets(question, sizeof(question), fp); //skip blank separator (may be EOF)
+        total++;
+    }
+    fclose(fp);
+
+    if(total == 0)
+    {
+        printf("No questions found!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    printf("Total questions: %d\n\n", total);
+    printf("Enter question number to delete (1-%d): ", total);
+    scanf("%d", &choice);
+    getchar();
+
+    if(choice < 1 || choice > total)
+    {
+        printf("\nInvalid choice!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    printf("\nAre you sure you want to delete question %d? (y/n): ", choice);
+    char confirm;
+    scanf(" %c", &confirm);
+    getchar();
+
+    if(confirm != 'y' && confirm != 'Y')
+    {
+        printf("\nDeletion cancelled.\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    fp = fopen("quiz.txt", "r");
+    temp = fopen(TEMP_FILE, "w");
+    if(fp == NULL || temp == NULL)
+    {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    while(fgets(question, sizeof(question), fp) != NULL)
+    {
+        fgets(optionA, sizeof(optionA), fp);
+        fgets(optionB, sizeof(optionB), fp);
+        fgets(optionC, sizeof(optionC), fp);
+        fgets(optionD, sizeof(optionD), fp);
+        fscanf(fp, " %c", &correct);
+        fgetc(fp);
+
+        current++;
+
+        if(current == choice)
+        {
+            //skip blank separator line (may not exist for last question)
+            fgets(question, sizeof(question), fp);
+            continue;
+        }
+
+        fprintf(temp, "%s", question);
+        fprintf(temp, "%s", optionA);
+        fprintf(temp, "%s", optionB);
+        fprintf(temp, "%s", optionC);
+        fprintf(temp, "%s", optionD);
+        fprintf(temp, "%c\n", correct);
+
+        //write blank separator (may not exist for last question)
+        if(fgets(question, sizeof(question), fp) != NULL)
+        {
+            fprintf(temp, "%s", question);
+        }
+    }
+
+    fclose(fp);
+    fclose(temp);
+
+    remove("quiz.txt");
+    rename(TEMP_FILE, "quiz.txt");
+
+    printf("\nQuestion %d deleted successfully!\n", choice);
+    printf("Press Enter...");
+    getchar();
+    return 0;
+}
+
+int manageQuizAdmin() //function for admin quiz management menu
+{
+    int choice;
+
+    do
+    {
+        clearscreen();
+        printf("===== MANAGE QUIZ =====\n\n");
+        printf("1. List All Questions\n");
+        printf("2. Edit a Question\n");
+        printf("3. Delete a Question\n");
+        printf("4. Add a New Question\n");
+        printf("5. Back to Admin Menu\n\n");
+        printf("Enter choice (1-5): ");
+        scanf("%d", &choice);
+        getchar();
+
+        switch(choice)
+        {
+            case 1:
+                listQuizQuestions();
+                break;
+            case 2:
+                editQuizQuestion();
+                break;
+            case 3:
+                deleteQuizQuestion();
+                break;
+            case 4:
+                addQuizQuestion();
+                break;
+            case 5:
+                printf("\nReturning to admin menu...\n");
+                break;
+            default:
+                printf("\nInvalid choice!\n");
+                printf("Press Enter...");
+                getchar();
+        }
+    } while(choice != 5);
+
+    return 0;
+}
+
+int listQuizQuestions() //function for listing all quiz questions with answers
+{
+    FILE *fp;
+    char question[200];
+    char optionA[100], optionB[100], optionC[100], optionD[100];
+    char correct;
+    int count = 0;
+
+    clearscreen();
+    printf("===== QUIZ QUESTIONS =====\n\n");
+
+    fp = fopen("quiz.txt", "r");
+    if(fp == NULL)
+    {
+        printf("Quiz file not found!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    while(fgets(question, sizeof(question), fp) != NULL)
+    {
+        fgets(optionA, sizeof(optionA), fp);
+        fgets(optionB, sizeof(optionB), fp);
+        fgets(optionC, sizeof(optionC), fp);
+        fgets(optionD, sizeof(optionD), fp);
+        fscanf(fp, " %c", &correct);
+        fgetc(fp); //consume newline after answer
+        fgets(question, sizeof(question), fp); //skip blank line
+
+        count++;
+        printf("Q%d. %s", count, question);
+        printf("   %s", optionA);
+        printf("   %s", optionB);
+        printf("   %s", optionC);
+        printf("   %s", optionD);
+        printf("   Answer: %c\n\n", correct);
+    }
+
+    fclose(fp);
+
+    printf("Total questions: %d\n", count);
+    printf("\nPress Enter...");
+    getchar();
+    return 0;
+}
+
+int editQuizQuestion() //function for editing a specific quiz question
+{
+    FILE *fp, *temp;
+    char question[200];
+    char optionA[100], optionB[100], optionC[100], optionD[100];
+    char correct;
+    char newQuestion[200], newOptionA[100], newOptionB[100], newOptionC[100], newOptionD[100];
+    char newCorrect[10];
+    int total = 0, choice, current = 0;
+
+    clearscreen();
+    printf("===== EDIT QUIZ QUESTION =====\n\n");
+
+    fp = fopen("quiz.txt", "r");
+    if(fp == NULL)
+    {
+        printf("Quiz file not found!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    while(fgets(question, sizeof(question), fp) != NULL)
+    {
+        fgets(optionA, sizeof(optionA), fp);
+        fgets(optionB, sizeof(optionB), fp);
+        fgets(optionC, sizeof(optionC), fp);
+        fgets(optionD, sizeof(optionD), fp);
+        fscanf(fp, " %c", &correct);
+        fgetc(fp);
+        fgets(question, sizeof(question), fp);
+        total++;
+    }
+    fclose(fp);
+
+    if(total == 0)
+    {
+        printf("No questions found!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    printf("Total questions: %d\n\n", total);
+    printf("Enter question number to edit (1-%d): ", total);
+    scanf("%d", &choice);
+    getchar();
+
+    if(choice < 1 || choice > total)
+    {
+        printf("\nInvalid choice!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    fp = fopen("quiz.txt", "r");
+    temp = fopen(TEMP_FILE, "w");
+    if(fp == NULL || temp == NULL)
+    {
+        printf("Error opening file.\n");
+        return 1;
+    }
+
+    while(fgets(question, sizeof(question), fp) != NULL)
+    {
+        fgets(optionA, sizeof(optionA), fp);
+        fgets(optionB, sizeof(optionB), fp);
+        fgets(optionC, sizeof(optionC), fp);
+        fgets(optionD, sizeof(optionD), fp);
+        fscanf(fp, " %c", &correct);
+        fgetc(fp); //consume newline after answer
+
+        current++;
+
+        if(current == choice)
+        {
+            printf("\nCurrent question: %s", question);
+            printf("Current options: %s%s%s%s", optionA, optionB, optionC, optionD);
+            printf("Current answer: %c\n\n", correct);
+
+            printf("Enter new question (or press Enter to keep): ");
+            fgets(newQuestion, sizeof(newQuestion), stdin);
+            if(newQuestion[0] != '\n')
+            {
+                strcpy(question, newQuestion);
+            }
+
+            printf("Enter new option A (or press Enter to keep): ");
+            fgets(newOptionA, sizeof(newOptionA), stdin);
+            if(newOptionA[0] != '\n') strcpy(optionA, newOptionA);
+
+            printf("Enter new option B (or press Enter to keep): ");
+            fgets(newOptionB, sizeof(newOptionB), stdin);
+            if(newOptionB[0] != '\n') strcpy(optionB, newOptionB);
+
+            printf("Enter new option C (or press Enter to keep): ");
+            fgets(newOptionC, sizeof(newOptionC), stdin);
+            if(newOptionC[0] != '\n') strcpy(optionC, newOptionC);
+
+            printf("Enter new option D (or press Enter to keep): ");
+            fgets(newOptionD, sizeof(newOptionD), stdin);
+            if(newOptionD[0] != '\n') strcpy(optionD, newOptionD);
+
+            printf("Enter new correct answer (A-D, or press Enter to keep): ");
+            fgets(newCorrect, sizeof(newCorrect), stdin);
+            if(newCorrect[0] != '\n') correct = newCorrect[0];
+        }
+
+        fprintf(temp, "%s", question);
+        fprintf(temp, "%s", optionA);
+        fprintf(temp, "%s", optionB);
+        fprintf(temp, "%s", optionC);
+        fprintf(temp, "%s", optionD);
+        fprintf(temp, "%c\n", correct);
+
+        //read and write blank separator line
+        fgets(question, sizeof(question), fp);
+        fprintf(temp, "%s", question);
+    }
+
+    fclose(fp);
+    fclose(temp);
+
+    remove("quiz.txt");
+    rename(TEMP_FILE, "quiz.txt");
+
+    printf("\nQuestion %d updated successfully!\n", choice);
+    printf("Press Enter...");
+    getchar();
+    return 0;
+}
+
+int addQuizQuestion() //function for adding a new quiz question
+{
+    FILE *fp;
+    char newQuestion[200];
+    char newOptionA[100], newOptionB[100], newOptionC[100], newOptionD[100];
+    char newCorrect[10];
+
+    clearscreen();
+    printf("===== ADD NEW QUIZ QUESTION =====\n\n");
+
+    fp = fopen("quiz.txt", "a");
+    if(fp == NULL)
+    {
+        printf("Error opening quiz file!\n");
+        printf("Press Enter...");
+        getchar();
+        return 0;
+    }
+
+    printf("Enter question: ");
+    fgets(newQuestion, sizeof(newQuestion), stdin);
+
+    printf("Enter option A: ");
+    fgets(newOptionA, sizeof(newOptionA), stdin);
+
+    printf("Enter option B: ");
+    fgets(newOptionB, sizeof(newOptionB), stdin);
+
+    printf("Enter option C: ");
+    fgets(newOptionC, sizeof(newOptionC), stdin);
+
+    printf("Enter option D: ");
+    fgets(newOptionD, sizeof(newOptionD), stdin);
+
+    printf("Enter correct answer (A, B, C, or D): ");
+    fgets(newCorrect, sizeof(newCorrect), stdin);
+
+    fprintf(fp, "%s", newQuestion);
+    fprintf(fp, "%s", newOptionA);
+    fprintf(fp, "%s", newOptionB);
+    fprintf(fp, "%s", newOptionC);
+    fprintf(fp, "%s", newOptionD);
+    fprintf(fp, "%c\n", newCorrect[0]);
+    fprintf(fp, "\n");
+
+    fclose(fp);
+
+    printf("\nQuestion added successfully!\n");
     printf("Press Enter...");
     getchar();
     return 0;
