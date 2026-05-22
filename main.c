@@ -187,7 +187,7 @@ int readSection(char section[])
     char line[200];
     int found = 0;
 
-    fp = fopen("safetytips.txt", "r");
+    fp = fopen("main.txt", "r");
 
     if(fp == NULL)
     {

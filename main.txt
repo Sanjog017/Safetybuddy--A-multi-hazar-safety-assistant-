@@ -24,6 +24,7 @@ THIS IS THE FILE FOR ADDING ANY EXTRA TIPS IN FUTURE (ALTERNATIVE APPROACH TO HA
 3. Stay updated with flood warnings
 4. Disconnect electrical appliances if safe to do so
 5. Keep emergency supplies ready
+aadarsh
 
 [FLOOD_END]
 

@@ -38,7 +38,7 @@ int addEmergencyContact() // function for adding emergency contact information
 
     FILE *fp;
 
-    fp = fopen("contacts.txt", "a"); // append mode
+    fp = fopen("emc.txt", "a"); // append mode
 
     if (fp == NULL)
     {
