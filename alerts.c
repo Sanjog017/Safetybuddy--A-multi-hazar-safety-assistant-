@@ -13,7 +13,7 @@ void saveLocation(char location[]); //function prototype for saving user's locat
 
 
 
-int alerts()
+int alerts() //function for alerts menu
 {
     int choice;
     char location[50];
@@ -79,7 +79,7 @@ int alerts()
 
 
 
-void getLocation(char location[])
+void getLocation(char location[]) //function for getting user's location from file
 {
     FILE *fp;
 
@@ -112,7 +112,7 @@ void getLocation(char location[])
 
 
 
-void saveLocation(char location[])
+void saveLocation(char location[]) //function for saving user's location to file
 {
     FILE *fp;
 
@@ -133,9 +133,7 @@ void saveLocation(char location[])
 
 
 
-
-
-int readAlert(char location[])
+int readAlert(char location[]) //function for reading specific alert message from file
 {
     FILE *fp;
     char line[200];
@@ -153,7 +151,7 @@ int readAlert(char location[])
     {
         if(line[0] == '[')
         {
-            if(strstr(line, location))
+            if(strstr(line, location) && strstr(line, "_END") == NULL)
             {
                 found = 1;
                 continue;

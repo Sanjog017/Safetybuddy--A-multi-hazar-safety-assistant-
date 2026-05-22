@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int clearscreen(); //function prototype
+int clearscreen(); //function prototype for clearing screen
 int readSection(char section[]); //function prototype for reading specific section from file
 int main(); //function prototype for main menu
 
-int quizGame() //quiz function
+int quizGame() //function for quiz game
 {
     clearscreen();
 
@@ -59,11 +59,11 @@ int quizGame() //quiz function
         //checking answer
         if(answer == correct || answer == correct + 32)
         {
-            printf("✅ Correct!\n\n");
+            printf("Correct!\n\n");
         }
         else
         {
-            printf("❌ Wrong! Correct answer is %c\n\n", correct);
+            printf("Wrong! Correct answer is %c\n\n", correct);
         }
 
         //skip blank line between questions
@@ -74,8 +74,8 @@ int quizGame() //quiz function
 
     //return to main menu
     printf("Quiz completed! Press Enter to return to main menu\n");
-    getchar(); 
-    getchar();
+    getchar(); // consume the newline character left by previous input
+    getchar(); // wait for user to press Enter
 
     return 0;
 }

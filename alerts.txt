@@ -1,358 +1,498 @@
 [Achham]
-No current alerts
-Stay safe
-[/Achham]
+[Achham_END]
 
 [Arghakhanchi]
 No current alerts
 Stay safe
-[/Arghakhanchi]
+
+pani pardaixa 
+[Arghakhanchi_END]
 
 [Baitadi]
 No current alerts
 Stay safe
-[/Baitadi]
+
+pani pardaixa 
+[Baitadi_END]
 
 [Bajhang]
 No current alerts
 Stay safe
-[/Bajhang]
+
+pani pardaixa 
+[Bajhang_END]
 
 [Bajura]
 No current alerts
 Stay safe
-[/Bajura]
+
+pani pardaixa 
+[Bajura_END]
 
 [Banke]
 No current alerts
 Stay safe
-[/Banke]
+
+pani pardaixa 
+[Banke_END]
 
 [Bara]
 No current alerts
 Stay safe
-[/Bara]
+
+pani pardaixa 
+[Bara_END]
 
 [Bhaktapur]
 No current alerts
 Stay safe
-[/Bhaktapur]
+
+pani pardaixa 
+[Bhaktapur_END]
 
 [Bhojpur]
 No current alerts
 Stay safe
-[/Bhojpur]
+
+pani pardaixa 
+[Bhojpur_END]
 
 [Chitwan]
 No current alerts
 Stay safe
-[/Chitwan]
+
+pani pardaixa 
+[Chitwan_END]
 
 [Dadeldhura]
 No current alerts
 Stay safe
-[/Dadeldhura]
+
+pani pardaixa 
+[Dadeldhura_END]
 
 [Dailekh]
 No current alerts
 Stay safe
-[/Dailekh]
+
+pani pardaixa 
+[Dailekh_END]
 
 [Dang]
 No current alerts
 Stay safe
-[/Dang]
+
+pani pardaixa 
+[Dang_END]
 
 [Dhading]
 No current alerts
 Stay safe
-[/Dhading]
+
+pani pardaixa 
+[Dhading_END]
 
 [Dhankuta]
 No current alerts
 Stay safe
-[/Dhankuta]
+
+pani pardaixa 
+[Dhankuta_END]
 
 [Dhanusha]
 No current alerts
 Stay safe
-[/Dhanusha]
+
+pani pardaixa 
+[Dhanusha_END]
 
 [Dholkha]
 No current alerts
 Stay safe
-[/Dholkha]
+
+pani pardaixa 
+[Dholkha_END]
 
 [Dolpa]
 No current alerts
 Stay safe
-[/Dolpa]
+
+pani pardaixa 
+[Dolpa_END]
 
 [Doti]
 No current alerts
 Stay safe
-[/Doti]
+
+pani pardaixa 
+[Doti_END]
 
 [East Nawalparasi]
 No current alerts
 Stay safe
-[/East Nawalparasi]
+
+pani pardaixa 
+[East Nawalparasi_END]
 
 [Gorkha]
 No current alerts
 Stay safe
-[/Gorkha]
+
+pani pardaixa 
+[Gorkha_END]
 
 [Gulmi]
 No current alerts
 Stay safe
-[/Gulmi]
+
+pani pardaixa 
+[Gulmi_END]
 
 [Humla]
 No current alerts
 Stay safe
-[/Humla]
+
+pani pardaixa 
+[Humla_END]
 
 [Ilam]
 No current alerts
 Stay safe
-[/Ilam]
+
+pani pardaixa 
+[Ilam_END]
 
 [Jajarkot]
 No current alerts
 Stay safe
-[/Jajarkot]
+
+pani pardaixa 
+[Jajarkot_END]
 
 [Jhapa]
 No current alerts
 Stay safe
-[/Jhapa]
+
+pani pardaixa 
+[Jhapa_END]
 
 [Jumpur (Jumla)]
 No current alerts
 Stay safe
-[/Jumpur (Jumla)]
+
+pani pardaixa 
+[Jumpur (Jumla)_END]
 
 [Kailali]
 No current alerts
 Stay safe
-[/Kailali]
+
+pani pardaixa 
+[Kailali_END]
 
 [Kalikot]
 No current alerts
 Stay safe
-[/Kalikot]
+
+pani pardaixa 
+[Kalikot_END]
 
 [Kanchanpur]
 No current alerts
 Stay safe
-[/Kanchanpur]
+
+pani pardaixa 
+[Kanchanpur_END]
 
 [Kapilvastu]
 No current alerts
 Stay safe
-[/Kapilvastu]
+
+pani pardaixa 
+[Kapilvastu_END]
 
 [Kaski]
 No current alerts
 Stay safe
-[/Kaski]
+
+pani pardaixa 
+[Kaski_END]
 
 [Kathmandu]
 pani pardai xa
-[/Kathmandu]
+
+pani pardaixa 
+[Kathmandu_END]
 
 [Kavrepalanchok]
 No current alerts
 Stay safe
-[/Kavrepalanchok]
+
+pani pardaixa 
+[Kavrepalanchok_END]
 
 [Khotang]
 No current alerts
 Stay safe
-[/Khotang]
+
+pani pardaixa 
+[Khotang_END]
 
 [Lamjung]
 No current alerts
 Stay safe
-[/Lamjung]
+
+pani pardaixa 
+[Lamjung_END]
 
 [Mahottari]
 No current alerts
 Stay safe
-[/Mahottari]
+
+pani pardaixa 
+[Mahottari_END]
 
 [Makwanpur]
 No current alerts
 Stay safe
-[/Makwanpur]
+
+pani pardaixa 
+[Makwanpur_END]
 
 [Manang]
 No current alerts
 Stay safe
-[/Manang]
+
+pani pardaixa 
+[Manang_END]
 
 [Morang]
 No current alerts
 Stay safe
-[/Morang]
+
+pani pardaixa 
+[Morang_END]
 
 [Mugu]
 No current alerts
 Stay safe
-[/Mugu]
+
+pani pardaixa 
+[Mugu_END]
 
 [Mustang]
 No current alerts
 Stay safe
-[/Mustang]
+
+pani pardaixa 
+[Mustang_END]
 
 [Myagdi]
 No current alerts
 Stay safe
-[/Myagdi]
+
+pani pardaixa 
+[Myagdi_END]
 
 [Nawalpur]
 No current alerts
 Stay safe
-[/Nawalpur]
+
+pani pardaixa 
+[Nawalpur_END]
 
 [Nuwakot]
 No current alerts
 Stay safe
-[/Nuwakot]
+
+pani pardaixa 
+[Nuwakot_END]
 
 [Okhaldhunga]
 No current alerts
 Stay safe
-[/Okhaldhunga]
+
+pani pardaixa 
+[Okhaldhunga_END]
 
 [Palpa]
 No current alerts
 Stay safe
-[/Palpa]
+
+pani pardaixa 
+[Palpa_END]
 
 [Panchthar]
 No current alerts
 Stay safe
-[/Panchthar]
+
+pani pardaixa 
+[Panchthar_END]
 
 [Parbat]
 No current alerts
 Stay safe
-[/Parbat]
+
+pani pardaixa 
+[Parbat_END]
 
 [Parsa]
 No current alerts
 Stay safe
-[/Parsa]
+
+pani pardaixa 
+[Parsa_END]
 
 [Ramechhap]
 No current alerts
 Stay safe
-[/Ramechhap]
+
+pani pardaixa 
+[Ramechhap_END]
 
 [Rasuwa]
 No current alerts
 Stay safe
-[/Rasuwa]
+
+pani pardaixa 
+[Rasuwa_END]
 
 [Rautahat]
 No current alerts
 Stay safe
-[/Rautahat]
+
+pani pardaixa 
+[Rautahat_END]
 
 [Rolpa]
 No current alerts
 Stay safe
-[/Rolpa]
+
+pani pardaixa 
+[Rolpa_END]
 
 [Rukum East]
 No current alerts
 Stay safe
-[/Rukum East]
+
+pani pardaixa 
+[Rukum East_END]
 
 [Rukum West]
 No current alerts
 Stay safe
-[/Rukum West]
+
+pani pardaixa 
+[Rukum West_END]
 
 [Rolpa]
 No current alerts
 Stay safe
-[/Rolpa]
+
+pani pardaixa 
+[Rolpa_END]
 
 [Salyan]
 No current alerts
 Stay safe
-[/Salyan]
+
+pani pardaixa 
+[Salyan_END]
 
 [Sankhuwasabha]
 No current alerts
 Stay safe
-[/Sankhuwasabha]
+
+pani pardaixa 
+[Sankhuwasabha_END]
 
 [Saptari]
 No current alerts
 Stay safe
-[/Saptari]
+
+pani pardaixa 
+[Saptari_END]
 
 [Sarlahi]
 No current alerts
 Stay safe
-[/Sarlahi]
+
+pani pardaixa 
+[Sarlahi_END]
 
 [Sindhuli]
 No current alerts
 Stay safe
-[/Sindhuli]
+
+pani pardaixa 
+[Sindhuli_END]
 
 [Sindhupalchok]
 No current alerts
 Stay safe
-[/Sindhupalchok]
+
+pani pardaixa 
+[Sindhupalchok_END]
 
 [Siraha]
 No current alerts
 Stay safe
-[/Siraha]
+
+pani pardaixa 
+[Siraha_END]
 
 [Solukhumbu]
 No current alerts
 Stay safe
-[/Solukhumbu]
+
+pani pardaixa 
+[Solukhumbu_END]
 
 [Sunsari]
 No current alerts
 Stay safe
-[/Sunsari]
+
+pani pardaixa 
+[Sunsari_END]
 
 [Surkhet]
 No current alerts
 Stay safe
-[/Surkhet]
+
+pani pardaixa 
+[Surkhet_END]
 
 [Syangja]
 No current alerts
 Stay safe
-[/Syangja]
+
+pani pardaixa 
+[Syangja_END]
 
 [Tanahun]
 No current alerts
 Stay safe
-[/Tanahun]
+
+pani pardaixa 
+[Tanahun_END]
 
 [Taplejung]
 No current alerts
 Stay safe
-[/Taplejung]
+
+pani pardaixa 
+[Taplejung_END]
 
 [Terhathum]
 No current alerts
 Stay safe
-[/Terhathum]
+
+pani pardaixa 
+[Terhathum_END]
 
 [Udayapur]
 No current alerts
 Stay safe
-[/Udayapur]
+
+pani pardaixa 
+[Udayapur_END]
