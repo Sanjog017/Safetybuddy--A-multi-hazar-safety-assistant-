@@ -1,0 +1,9 @@
+Police 100
+Fire Brigade 101
+Ambulance 102
+Traffic Police 103
+Disaster Emergency 1149
+Women Helpline 1145
+Child Helpline 1098
+Tourism Police 1144
+Ambulance Private 1128

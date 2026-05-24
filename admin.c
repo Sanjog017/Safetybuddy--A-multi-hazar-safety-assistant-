@@ -668,13 +668,27 @@ int deleteAnyContact() //function for deleting a contact from either file
     while(fgets(line, sizeof(line), fp))
     {
         line[strcspn(line, "\n")] = 0;
-        if(strstr(line, target) != NULL)
+
+        //split the contact into name and number at the space
+        char *space = strchr(line, ' ');
+        char *name = line;
+        char *number = "";
+
+        if(space != NULL)
+        {
+            *space = '\0';
+            number = space + 1;
+        }
+
+        //check if name matches OR number matches exactly
+        if(strcmp(name, target) == 0 || strcmp(number, target) == 0)
         {
             found = 1;
-            printf("Deleted: %s\n", line);
+            printf("Deleted: %s %s\n", name, number);
         }
         else
         {
+            if(space != NULL) *space = ' '; //put space back
             fprintf(temp, "%s\n", line);
         }
     }

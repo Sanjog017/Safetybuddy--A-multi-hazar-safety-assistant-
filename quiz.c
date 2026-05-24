@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 int clearscreen(); //function prototype for clearing screen
-int readSection(char section[]); //function prototype for reading specific section from file
 int main(); //function prototype for main menu
 
 int quizGame() //function for quiz game
@@ -16,9 +15,11 @@ int quizGame() //function for quiz game
     char optionB[100];
     char optionC[100];
     char optionD[100];
+    char answerLine[10];
 
     char correct; //correct answer
     char answer;  //user answer
+    int count = 0;
 
     //opening file
     fp = fopen("quiz.txt", "r");
@@ -33,30 +34,31 @@ int quizGame() //function for quiz game
     //loop until end of file
     while(fgets(question, sizeof(question), fp) != NULL)
     {
+        count++;
+
         //reading options
         fgets(optionA, sizeof(optionA), fp);
         fgets(optionB, sizeof(optionB), fp);
         fgets(optionC, sizeof(optionC), fp);
         fgets(optionD, sizeof(optionD), fp);
 
-        //reading correct answer
-        fscanf(fp, " %c", &correct);
-
-        //consume newline after answer
-        fgetc(fp);
+        //reading correct answer from file
+        fgets(answerLine, sizeof(answerLine), fp);
+        correct = answerLine[0];
 
         //printing question
-        printf("%s", question);
-        printf("%s", optionA);
-        printf("%s", optionB);
-        printf("%s", optionC);
-        printf("%s", optionD);
+        printf("Q%d. %s", count, question);
+        printf("   %s", optionA);
+        printf("   %s", optionB);
+        printf("   %s", optionC);
+        printf("   %s", optionD);
 
         //taking user answer
         printf("Answer: ");
         scanf(" %c", &answer);
+        getchar();
 
-        //checking answer
+        //checking answer (also accept lowercase by adding 32)
         if(answer == correct || answer == correct + 32)
         {
             printf("Correct!\n\n");
@@ -74,7 +76,6 @@ int quizGame() //function for quiz game
 
     //return to main menu
     printf("Quiz completed! Press Enter to return to main menu\n");
-    getchar(); // consume the newline character left by previous input
     getchar(); // wait for user to press Enter
 
     return 0;

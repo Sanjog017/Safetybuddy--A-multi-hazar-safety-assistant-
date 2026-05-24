@@ -54,8 +54,7 @@ int displaySavedContacts() //function for displaying all saved contacts from bot
 int emergencyContact() //function for emergency contact menu
 {
     clearscreen();
-    readSection("EMERGENCYCONTACT");
-
+    printf("===== EMERGENCY CONTACTS =====\n\n");
     displaySavedContacts();
 
     int c;

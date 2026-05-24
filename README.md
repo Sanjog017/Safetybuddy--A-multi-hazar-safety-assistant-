@@ -33,12 +33,9 @@ gcc main.c user.c admin.c alerts.c emc.c quiz.c -o run
 ```
 
 ### Run
-```
-or just do:
 ```bash
 ./run
 ```
-(already compiled file is there)
 
 ## Files in this project
 
@@ -54,7 +51,7 @@ or just do:
 | alerts.txt | Alert messages for different Nepali districts |
 | quiz.txt | All 40 quiz questions |
 | emc.txt | User added emergency contacts |
-| emc_predefined.txt | Admin managed emergency contacts |
+| emc_predefined.txt | 9 predefined emergency contacts (Police, Fire, Ambulance, etc.) |
 | admin_config.txt | Admin password (change it if you want) |
 | location.txt | Saves your current location |
 

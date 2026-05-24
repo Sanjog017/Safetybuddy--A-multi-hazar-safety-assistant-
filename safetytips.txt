@@ -90,22 +90,6 @@ THIS IS THE FILE FOR ADDING ANY EXTRA TIPS IN FUTURE (ALTERNATIVE APPROACH TO HA
 [FIRSTAID_END]
 
 
-[EMERGENCYCONTACT]
-==================================================
-              EMERGENCY CONTACTS
-==================================================
-
-1. Police: 100 (Nepal)
-2. Fire Brigade: 101
-3. Ambulance: 102
-4. Traffic Police: 103
-5. Disaster Emergency: 1149
-
-6. Keep local emergency numbers saved in your phone
-7. Share your live location with family during emergencies
-8. Know the nearest hospital and police station in your area
-[EMERGENCYCONTACT_END]
-
 
 [WILDFIRE]
 ==================================================
