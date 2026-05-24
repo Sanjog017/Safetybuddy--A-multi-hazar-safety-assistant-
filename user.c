@@ -272,7 +272,7 @@ int userMenu() //function for user menu
         printf("11. Snake Bite & Poisoning Safety\n");
         printf("12. About This Program\n");
         printf("13. Settings\n");
-        printf("14. Exit\n\n");
+        printf("14. Return to Menu\n\n");
 
         printf("Enter your choice (0-14): ");
 
@@ -341,7 +341,7 @@ int userMenu() //function for user menu
                 break;
 
             case 14:
-                exitProgram();
+                printf("\nReturning to main menu...\n");
                 break;
 
             default:

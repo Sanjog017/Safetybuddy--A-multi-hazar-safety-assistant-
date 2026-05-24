@@ -10,6 +10,11 @@ THIS IS THE FILE FOR ADDING ANY EXTRA TIPS IN FUTURE (ALTERNATIVE APPROACH TO HA
 3. Drop, Cover, and Hold On
 4. Keep emergency supplies ready
 
+jd
+
+
+
+  
 [EARTHQUAKE_END]
 
 
@@ -26,6 +31,11 @@ THIS IS THE FILE FOR ADDING ANY EXTRA TIPS IN FUTURE (ALTERNATIVE APPROACH TO HA
 
 hello 
 
+jd
+
+
+
+  
 [FLOOD_END]
 
 
@@ -42,6 +52,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [FIRE_END]
 
 
@@ -58,6 +73,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [LANDSLIDE_END]
 
 
@@ -74,6 +94,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [STORM_END]
 
 
@@ -90,6 +115,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [ROAD_END]
 
 
@@ -106,6 +136,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [FIRSTAID_END]
 
 
@@ -126,6 +161,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [EMERGENCYCONTACT_END]
 
 
@@ -143,6 +183,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [WILDFIRE_END]
 
 
@@ -162,6 +207,11 @@ hello
 
 hello 
 
+jd
+
+
+
+  
 [SNAKEBITE_END]
 
 
@@ -181,4 +231,9 @@ and emergency awareness purposes.
 
 hello 
 
+jd
+
+
+
+  
 [ABOUT_END]
