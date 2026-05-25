@@ -98,23 +98,22 @@ int roadAccident() //function for road accident safety tips
     return 0;
 }
 
-//case 7 = in emc.c file
+//case 10 = in emc.c file
 
-//case 8
+//case 7
 int firstAidInstructions() //function for first aid instructions
 {
      clearscreen();
     readSection("FIRSTAID");
-
     printf("\n\n Press Enter to return to main menu\n");
   getchar(); // consume the newline character left by previous input
   getchar(); // wait for user to press Enter
     return 0;
 }
 
-//case 9 = on quiz.c
+//case 11 = on quiz.c
 
-//case 10
+//case 9
 int wildfire() //function for wildfire safety tips
 {
     clearscreen();
@@ -127,7 +126,7 @@ int wildfire() //function for wildfire safety tips
     return 0;
 }
 
-//case 11
+//case 8
 int snakeBite() //function for snake bite and poisoning safety tips
 {
     clearscreen();
@@ -199,7 +198,7 @@ int clearscreen()
     system("clear");
     return 0;
 }
-
+//case 13
 int userSettings() //function for user settings menu
 {
     int choice;
@@ -265,11 +264,11 @@ int userMenu() //function for user menu
         printf("4. Landslide Safety\n");
         printf("5. Storm/Tornado Safety\n");
         printf("6. Road Accident Safety\n");
-        printf("7. Emergency Contacts\n");
-        printf("8. First Aid Instructions\n");
-        printf("9. Quiz Game\n");
-        printf("10. Wildfire Safety\n");
-        printf("11. Snake Bite & Poisoning Safety\n");
+        printf("7. First Aid Instructions\n");
+        printf("8. Snake Bite & Poisoning Safety\n");
+        printf("9. Wildfire Safety\n");
+        printf("10. Emergency Contacts\n");
+        printf("11. Quiz Game\n");
         printf("12. About This Program\n");
         printf("13. Settings\n");
         printf("14. Return to Menu\n\n");
@@ -310,23 +309,23 @@ int userMenu() //function for user menu
                 break;
 
             case 7:
-                emergencyContact();
-                break;
-
-            case 8:
                 firstAidInstructions();
                 break;
 
-            case 9:
-                quizGame();
+            case 8:
+                snakeBite();
                 break;
 
-            case 10:
+            case 9:
                 wildfire();
                 break;
 
+            case 10:
+                emergencyContact();
+                break;
+
             case 11:
-                snakeBite();
+                quizGame();
                 break;
 
             case 12:
