@@ -195,7 +195,11 @@ int readSection(char section[])
 //function to clear screen
 int clearscreen()
 {
-    system("clear");
+   #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
     return 0;
 }
 //case 13
