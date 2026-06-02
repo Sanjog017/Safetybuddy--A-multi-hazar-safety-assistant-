@@ -10,6 +10,7 @@ Basically you can pick from lot of options and get safety tips about different t
 
 There are two modes:
 
+
 ### User Mode
 - Read safety tips for 10 hazard/disaster topics (Earthquake, Flood, Fire, Landslide, Storm/Tornado, Road Accident, First Aid, Wildfire, Snake Bite/Poisoning)
 - Check location-based alerts (77 districts of Nepal)
