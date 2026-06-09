@@ -1,4 +1,3 @@
-# INTRODUCTION
 # SafetyBuddy - Multi Hazard Safety Assistant
 
 This was my first semester C programming project. Its a console based application that gives you safety information about different natural disasters and emergencies. I made this with my group for our college project.
