@@ -94,11 +94,11 @@ Right now its a basic console app but if we ever turn this into a GUI app or web
 
 
 ## TEAM:
+
 Aadarsh Kumar Chaudhary: github.com/Aadarshchaadhary
-
 Anjila Shrestha: github.com/ajila26
-
 Sanjog Pathak: github.com/Sanjog017
+
 
 
 *This was our first ever programming project so go easy on us. Made by 3 first semester students trying to figure out how pointers work.*
