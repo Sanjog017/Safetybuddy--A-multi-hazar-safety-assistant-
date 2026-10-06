@@ -97,7 +97,7 @@ Right now its a basic console app but if we ever turn this into a GUI app or web
 
 Aadarsh Kumar Chaudhary: github.com/Aadarshchaadhary
 
-Anjila Shrestha: github.com/ajila26
+Anjila Shrestha: github.com/anjila26
 
 Sanjog Pathak: github.com/Sanjog017
 
