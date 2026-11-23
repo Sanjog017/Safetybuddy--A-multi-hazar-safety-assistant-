@@ -93,7 +93,7 @@ Right now its a basic console app but if we ever turn this into a GUI app or web
 ---
 
 
-## TEAM:
+## TEAM Credits =
 
 Aadarsh Kumar Chaudhary: github.com/Aadarshchaadhary
 
